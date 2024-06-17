@@ -2,8 +2,10 @@ package com.example.test.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -12,6 +14,7 @@ public class User {
 
     @Id
     private int jmbg;
+
     private String firstname;
     private String lastname;
     private int years;
